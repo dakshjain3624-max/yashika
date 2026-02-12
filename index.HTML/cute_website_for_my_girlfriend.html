@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Just For You 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffd6e8, #ffeef6);
+      color: #5a2a3c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 30px 24px;
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    .heart {
+      font-size: 2.5rem;
+      animation: float 2s infinite ease-in-out;
+      margin: 10px 0;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 999px;
+      background: #ff6fae;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: #ff4f9a;
+    }
+
+    .hidden-message {
+      display: none;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hey Yashika 💕</h1>
+    <div class="heart">💖</div>
+    
+    <p>
+      I made this little website just for you.
+      I hope it makes you smile, even on a bad day.
+    </p>
+    <p>
+      You are kind, special, and honestly amazing.
+      Never forget that.
+    </p>
+
+    <button onclick="showMessage()">Click me 💌</button>
+    <div id="msg" class="hidden-message">
+      You mean more to me than you probably realize 🌸
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('msg').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
